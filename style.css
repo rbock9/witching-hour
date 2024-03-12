@@ -53,33 +53,6 @@ body {
         object-fit: cover;
         object-position: bottom;
     }
-
-    /* #story-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-column-gap: 20px;
-        grid-template-rows: auto;
-        grid-template-areas:
-        "text text image"
-        "buttons buttons buttons"
-    }
-
-    #image-container {
-        grid-area: image;
-    }
-
-    #text-container {
-        grid-area: text;
-        text-align: left;
-    }
-
-    #choices-container {
-        grid-area: buttons;
-        display: flex;
-        flex-flow: row-wrap;
-        justify-content: center;
-    }
-    */
 }
 
 #text-container > p {

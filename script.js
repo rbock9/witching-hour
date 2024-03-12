@@ -48,7 +48,6 @@ function selectChoice(choice) {
     if (nextSlideId <= 0) {
         return startGame()
     }
-    // showSlide(nextSlideId)
     setTimeout(() => {
         showSlide(nextSlideId);
     }, "150");
@@ -63,17 +62,6 @@ function changeImage(slide) {
         currentImage.src = slide.imageURL;
         currentImage.classList.add('slide-image')
         imagebox.appendChild(currentImage)
-    }
-}
-
-function toggleMute() {
-    let audio = document.getElementById("myAudio");
-    if (audio.muted) {
-        audio.muted = false;
-        muteButton.innerText("Sounds are off")
-    } else {
-        audio.muted = true
-        muteButton.innerText("Sounds are on")
     }
 }
 
