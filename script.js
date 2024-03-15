@@ -70,7 +70,7 @@ function changeImage(slide) {
 const slides = [
     {
         id: 1,
-        text: `<h3>"Halt!"</h3>`,
+        text: `"Halt!"`,
         imageURL: "",
         choices: [
             {
@@ -303,7 +303,7 @@ const slides = [
         imageURL: "",
         choices: [
             {
-                text: `"That was a witch..."`,
+                text: `"That was a witch"`,
                 nextSlide: 23
             }, 
             {
@@ -1122,7 +1122,7 @@ const slides = [
     },
     {
         id: 92,
-        text: `The End.`,
+        text: `THE END`,
         imageURL: "",
         choices: [
             {
