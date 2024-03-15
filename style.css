@@ -12,11 +12,14 @@ body {
 }
 
 #story-container {
-    margin: 80px auto;
-    padding: 20px;
+    margin: 40px auto;
+    padding: 20px 40px;
     max-width: 1000px;
     min-height: 80vh;
     border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 #start-button {
@@ -36,7 +39,11 @@ body {
 }
 
 #image-container {
-    margin: 20px auto;
+    min-height: 100px;
+    margin-bottom: 20px;
+}
+
+#image-container > img {
     min-height: 160px;
 }
 
@@ -51,20 +58,21 @@ body {
     .slide-image {
         width: auto;
         height: 300px;
-        min-height: 300px;
         object-fit: cover;
         object-position: bottom;
     }
 }
 
-#text-container > p {
+#text-container {
     margin: 10px 0;
 }
 
 #choices-container {
     margin: 10px 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
 }
-
 
 #choices-container button {
     margin: 10px;
@@ -82,19 +90,4 @@ body {
     color: black;
 }
 
-/* Starting Animation */
-body {
-    animation: fadeInAnimation ease 2s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-
-@keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
 

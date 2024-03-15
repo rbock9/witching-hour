@@ -46,11 +46,13 @@ function showSlide(slideId) {
 function selectChoice(choice) {
     const nextSlideId = choice.nextSlide
     if (nextSlideId <= 0) {
-        return startGame()
+        setTimeout(() => {
+            return startGame()
+        }, "400");
     }
     setTimeout(() => {
         showSlide(nextSlideId);
-    }, "150");
+    }, "200");
 }
 
 function changeImage(slide) {
@@ -850,7 +852,7 @@ const slides = [
     },
     {
         id: 68,
-        text: `They are all looking at you`,
+        text: `(They are all looking at you.)`,
         imageURL: "assets/images/image10.png",
         choices: [
             {
